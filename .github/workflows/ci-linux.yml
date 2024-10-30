@@ -4,7 +4,8 @@ on: [push, pull_request]
 
 jobs:
     test:
-        env: PIP_TRUSTED_HOST: pypi.python.org
+        env:
+            PIP_TRUSTED_HOST: pypi.python.org
         runs-on: ubuntu-latest
         strategy:
             fail-fast: false
